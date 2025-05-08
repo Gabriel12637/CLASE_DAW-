@@ -40,6 +40,21 @@
     <section>
         <h2>formulario de registro</h2>
         <!--averiguar la propiedad action que me permita cargar archivos multimedia en mi nformulario-->
+        <form action="/ruta/donde/se/procesan/archivos" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="archivo">celeciona un archivo:</label>
+                <input type="file"
+                id="archivo" name="archivo_subido"
+                accept="image/*,video/*,audio/*">
+
+                <small>puedes seleccionar imagenes , videos o audios.</small>
+            </div>
+            <button type="submit">subir archivo</button>
+        </form>
+
+
+
+    
         <form action="" method="post">
          <label>
             nombres:
